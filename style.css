@@ -1,5 +1,10 @@
 @font-face {
-    font-family: "Sequel 100 Black W05 105";
-    src:url("D:\HTML Study\SneakerShop2\Sequel_100_Black\Sequel100Black-105.ttf")
-        format("truetype");
-  }
+    font-family: "Sequel 100 Black 115";
+    src: url(Sequel_100_Black/Sequel100Black-115.ttf);
+}
+
+
+h1 {
+    font-size: 46pt;
+    font-family: 'Sequel 100 Black 115', sans-serif;
+}
