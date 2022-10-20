@@ -241,7 +241,24 @@ a {
 
 .st-introduction .intro-vid {
     width: 100%;
+    position: relative;
+    overflow: hidden;
 }
+
+.intro-vid:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    z-index: 2;
+  }
 
 .st-introduction .intro-vid img {
     width: 100%;
