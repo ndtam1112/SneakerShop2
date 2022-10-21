@@ -293,69 +293,74 @@ a {
 
 .list-product-wrapping {
     width: 100%;
-    height: 550px;
-    padding-top: 0;
+    height: 500px;
+    padding: 0px 16px;
     background-color: #111;
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     overflow: hidden;
     position: relative;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-fill-color: hsla(0,0%,100%,0);
 }
 
-.list-product-wrapping .product-wrapping {
-    animation: animationProduction 8s linear infinite;
-    white-space: nowrap; 
-    display: inline-flex;
-    justify-content: space-around;
-
-}
-.list-product-wrapping .product-wrapping .item-product {
+.list-product-wrapping .item-product {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin-right: 16px;
+    max-width: 250px;
+    height: 200px;
+    background-color: #fff;
+    padding: 20px 15px;
+    box-shadow: 1px 6px 6px rgb(255 255 255 / 50%);
+    transition: 0.3s ease-in-out;;
+    border-radius: 4px;
+    margin-bottom: 10px;
 }
 
-.list-product-wrapping .product-wrapping .item-product:nth-child(even) {
+.list-product-wrapping .item-product:hover {
+    height: 350px;
+    box-shadow: none
+}
+
+.list-product-wrapping a:nth-child(even) {
     transform: translateY(20px);
 }
-.list-product-wrapping .product-wrapping .item-product:nth-child(odd) {
+.list-product-wrapping a:nth-child(odd) {
     transform: translateY(-20px);
 }
 
-@keyframes animationProduction {
-    0% {
-        transform: translate3d(-100vw,0,0) translateX(60vw)
-    }
-    
-    100% {
-        transform: translateZ(0);
-    }
+
+.list-product-wrapping .item-product .imgBx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 6px 10px rgb(0 0 0 / 50%);
+
 }
 
-.list-product-wrapping .product-wrapping .item-product img {
-    width: 250px;
-    height: 250px;
+.list-product-wrapping .item-product .imgBx img {
+    max-width: 100%;
+    border-radius: 4px;
 }
 
-.list-product-wrapping .product-wrapping .item-product h3,
-.list-product-wrapping .product-wrapping .item-product p  {
-    color: #fff;
+.list-product-wrapping .item-product .content-product {
+    color: #111;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-family: 'Fluro Light', sans-serif;
-    width: 80%;
-    white-space: initial;
+    font-family: 'Fluro Bold', sans-serif;
+    width: 90%;
     text-align: center;
+    visibility: hidden;
 }
 
-.list-product-wrapping .product-wrapping .item-product p {
-    margin-top: 0px;
+.list-product-wrapping .item-product:hover .content-product {
+    visibility: visible;
+}
+
+.list-product-wrapping .item-product p {
+    margin: 0px;
     font-family: 'Fluro', sans-serif;
 }
 
@@ -364,6 +369,7 @@ a {
     height: 1200px;
     position: relative;
     padding: 32px;
+    overflow: hidden;
 }
 
 .st-about h2 {
@@ -384,7 +390,7 @@ a {
     position: absolute;
     width: 650px;
     right: 120px;
-    top: 200px
+    top: 150px
 }
 
 .st-about .item-product-1 img {
