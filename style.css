@@ -516,7 +516,7 @@ footer .row .col-5 input {
 
 footer .row .col-5 i {
     position: absolute;
-    right: 70px;
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
 }

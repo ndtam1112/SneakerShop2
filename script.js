@@ -21,20 +21,53 @@ gsap.timeline({
     opacity: 0
 })
 
-gsap.timeline({
-    scrollTrigger: {
-        trigger: ".st-about",
-        start: "center 90%",
-        end: "center center",
-        markers: true,
-        scrub: true,
-        pin: true
-        }
-})
-.from(".h2-about", {y : innerHeight * 1})
-.from(".item-product-1", {x : innerWidth * 1})
-.from(".item-product-2", {x : innerWidth * -1})
-.from(".item-product-3", {x : innerWidth * 1})
+// gsap.timeline({
+//     scrollTrigger: {
+//         trigger: ".st-about",
+//         start: "center bottom",
+//         end: "center 80%",
+//         markers: true,
+//         scrub: true,
+//         pin: true
+//         }
+// })
+// .from(".h2-about", {y : innerHeight * 1})
+
+// gsap.timeline({
+//     scrollTrigger: {
+//         trigger: ".h2-about",
+//         start: "center bottom",
+//         end: "top top",
+//         markers: true,
+//         scrub: true,
+//         pin: true
+//         }
+// })
+// .from(".item-product-1", {x : innerWidth * 1})
+
+// gsap.timeline({
+//     scrollTrigger: {
+//         trigger: ".item-product-1",
+//         start: "center bottom",
+//         end: "top top",
+//         markers: true,
+//         scrub: true,
+//         pin: true
+//         }
+// })
+// .from(".item-product-2", {x : innerWidth * -1})
+
+// gsap.timeline({
+//     scrollTrigger: {
+//         trigger: ".item-product-2",
+//         start: "center bottom",
+//         end: "top top",
+//         markers: true,
+//         scrub: true,
+//         pin: true
+//         }
+// })
+// .from(".item-product-3", {x : innerWidth * 1})
 
 
 
